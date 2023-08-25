@@ -1,8 +1,11 @@
-from flashcards.utils.construct_a_scale import get_notes_of_major_scale
+from flashcards.utils.c_major_on_string import notes_on_string
 
+
+    
 def main():
-    print(get_notes_of_major_scale("C"))
-
+    note = "E"
+    for each in notes_on_string(note):
+        print(each, end=" ")
 
 if __name__ == "__main__":
     main()
