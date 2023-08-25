@@ -2,5 +2,8 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
-  "python.formatting.provider": "none"
+  "python.formatting.provider": "none",
+  "python.autoComplete.extraPaths": [],
+  "python.defaultInterpreterPath": "/Users/juancarlos/Development/Apps/Flashcards_exploratory.venv/bin/python",
+  "python.autoComplete.addBrackets": true
 }
