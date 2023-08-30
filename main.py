@@ -1,19 +1,11 @@
-from flashcards.utils.c_major_on_string import notes_on_string
-
+from flashcards.utils.major import Major
 
     
 def main():
-    # note = "E"
-    # print("E ]---|---|---|---|---|"  )
-    # print("B ]---|---|---|---|---|" )
-    # print("G ]---|---|---|---|---|"  )
-    # print("D ]---|---|---|---|---|"  )
-    # print("A ]---|---|---|---|---|"  )
-    # print("E ]---|---|---|---|---|"  )
  
-    STRINGS = ["E", "A", "D", "G", "B", "E"]
-    STRINGS.reverse()
-    print(STRINGS)
-
+    scale = Major("B")
+    scale.key="C"
+    notes = scale.scale
+    print(notes)
 if __name__ == "__main__":
     main()

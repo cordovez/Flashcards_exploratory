@@ -1,5 +1,5 @@
 MAJOR_SCALE = ["W", "W", "H", "W", "W", "W", "H"]
-SHARP_NOTES = ["C", "C#", "D", "C#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
+SHARP_NOTES = ["C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab", "A", "A#", "B"]
 scale = []
 
 
