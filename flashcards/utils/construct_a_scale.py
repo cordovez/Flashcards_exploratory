@@ -5,7 +5,7 @@ scale = []
 
 
 def get_notes_of_major_scale(note):
-    starting_note = note
+    starting_note = note.upper()
     # Find the starting note's position
     start_position = SHARP_NOTES.index(starting_note)
     scale.append(starting_note)
@@ -33,4 +33,3 @@ def get_notes_of_major_scale(note):
         scale.append(SHARP_NOTES[position])
 
     return scale
-
