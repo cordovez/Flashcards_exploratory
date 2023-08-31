@@ -6,7 +6,8 @@ class Major:
 
     @property
     def key(self):
-        """The Key property"""
+        """The Key property. Setting the key determines the notes returned by
+        scale"""
         return self._key
     
     @key.setter
@@ -15,7 +16,6 @@ class Major:
         # self._key = new_key.upper()
         # #upper doesn't work because I can't use lower case 'b' as a flat.
 
-        # print(f"The key was set to: {self.key}")
 
     @key.deleter
     def key(self):
@@ -31,7 +31,6 @@ class Major:
         INTERVALS = ["W", "W", "H", "W", "W", "W", "H"]
 
         _scale = []
-        # print("The notes on the scale are:")
         starting_note = self.key
         starting_position = NOTES.index(starting_note)
         _scale.append(starting_note)
