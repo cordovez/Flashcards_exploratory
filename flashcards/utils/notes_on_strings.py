@@ -25,11 +25,10 @@ class Guitar_Strings:
     
     @property
     def notes_on_strings(self):
-        """The notes on the string selected"""
+        """A string illustrated with its notes"""
 
         NOTES = ["C", "C#/Db", "D", "D#/Eb", "E", "F", 
                  "F#/Gb", "G", "G#/Ab", "A", "A#/Bb", "B"]
-        
         
         _string = []
         starting_note = self._open_string
@@ -42,7 +41,10 @@ class Guitar_Strings:
             position += 1
             position %= len(NOTES)
             if NOTES[position] in self.scale:
-                _string.append(f"--{NOTES[position]}--|")
+                if len(NOTES[position]) == 5:
+                    _string.append(f"{NOTES[position]}|")
+                else:
+                    _string.append(f"--{NOTES[position]}--|")
             else:
                 _string.append("-----|")
             

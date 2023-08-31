@@ -1,8 +1,6 @@
 class Major:
     def __init__(self, key):
         self.key = key
-        # self.key = key.upper() 
-        # #upper doesn't work because I can't use lower case 'b' as a flat.
 
     @property
     def key(self):
@@ -13,9 +11,6 @@ class Major:
     @key.setter
     def key(self, new_key):
         self._key = new_key
-        # self._key = new_key.upper()
-        # #upper doesn't work because I can't use lower case 'b' as a flat.
-
 
     @key.deleter
     def key(self):
